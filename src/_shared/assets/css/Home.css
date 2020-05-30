@@ -1,0 +1,216 @@
+/**************************carousel***************************/
+
+.carousel-caption-left {
+	position: absolute;
+	right: 0 !important;
+	top: 40% !important;
+	left: 5% !important;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	text-align: left !important;
+	width: 60% !important;
+	font-size: 0.5rem;
+}
+
+.carousel-caption-right {
+	position: absolute;
+	right: 15% !important;
+	top: 40% !important;
+	left: 0;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	text-align: right !important;
+	font-size: 0.5rem;
+}
+
+.custom-button p {
+	color: white;
+	text-align: center;
+	margin: auto !important;
+	font-size: 0.5rem;
+}
+
+.custom-button {
+	background-color: rgba(3, 210, 255, 0.96) !important;
+	border-radius: 60px !important;
+	padding: 0.2rem;
+}
+
+.custom-button:hover {
+	border-color: none !important;
+	outline: none !important;
+}
+
+/* *************************about************************** */
+
+.about-item-text {
+	z-index: 400;
+	color: white;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+
+.about-item {
+	position: relative;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+.about-item:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(4, 205, 249, 0.7);
+	opacity: 0.7;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}
+
+a.about-item-link:hover > .about-item {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.24);
+	transition: all 0.2s ease-in-out;
+}
+
+/* *************************upcoming event************************** */
+
+.upcoming-event-title {
+	text-shadow: 1px 2.4px 2px #444;
+}
+
+.upcoming-event-date {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-style: italic;
+}
+
+.upcoming-event-venue {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-style: italic;
+}
+
+.upcoming-event-share {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-style: italic;
+	margin-top: 1.3rem;
+	color: #ff4392;
+}
+
+.time-container-circle {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	align-self: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+	margin: 0 auto;
+	margin-top: 1.3rem;
+	vertical-align: middle;
+	font-weight: 500;
+	font-size: x-large;
+	color: #444;
+	line-height: 60px;
+}
+
+/* *************************milestone************************** */
+.card-title-underline {
+	width: 100%;
+	height: 0.1rem;
+	border-radius: 0.1rem;
+	margin-top: 0.5rem;
+}
+
+/* *************************milestone************************** */
+
+.milestone {
+	position: relative;
+	padding: 3rem 0 2rem 0;
+	color: white;
+	background-attachment: fixed;
+}
+
+.milestone:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.7;
+}
+
+.z-index-50 {
+	z-index: 50 !important;
+}
+
+/* **********************************************media query*************************************************** */
+
+@media screen and (min-width: 576px) {
+	.carousel-caption-left {
+		position: absolute;
+		right: 0 !important;
+		top: 30% !important;
+		left: 5% !important;
+		z-index: 10;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		color: #fff;
+		text-align: left !important;
+		width: 60% !important;
+		font-size: 0.8rem;
+	}
+	.carousel-caption-right {
+		position: absolute;
+		right: 5% !important;
+		top: 30% !important;
+		left: 0;
+		z-index: 10;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		color: #fff;
+		text-align: right !important;
+		font-size: 0.8rem;
+	}
+	.custom-button p {
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.upcoming-event-share {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		font-style: italic;
+		margin-top: 3.3rem;
+		color: #ff4392;
+	}
+
+	.carousel-caption-left {
+		font-size: 1.5rem;
+	}
+	.carousel-caption-right {
+		font-size: 1.5rem;
+	}
+	.custom-button p {
+		font-size: 1.5rem;
+	}
+}
